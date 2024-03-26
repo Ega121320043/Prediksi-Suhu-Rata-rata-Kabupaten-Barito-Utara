@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Langkah 1: Memuat data
-data = pd.read_csv('Suhu (1).csv')
+data = pd.read_csv('Suhu.csv')
 
 # Langkah 2: Visualisasi distribusi data
 plt.figure(figsize=(8, 6))
