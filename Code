@@ -1,42 +1,137 @@
+# Grafik Suhu Rata Rata Bulanan X dan Y
+import pandas as pd
+import matplotlib.pyplot as plt
+from io import StringIO
+
+# Data CSV
+csv_data = '''Bulan,2015,2016,2017,2018,2019,2020,2021,2022
+Januari,26.5,27.8,27.0,26.8,27.1,27.6,26.5,26.6
+Februari,26.4,27.5,27.2,26.5,27.5,27.9,27.0,26.8
+Maret,27.3,27.9,26.9,27.0,26.8,27.8,27.0,26.9
+April,27.4,28.0,27.2,27.5,27.8,27.9,27.2,27.1
+Mei,27.7,28.2,27.7,27.8,28.1,28.0,27.6,27.5
+Juni,27.0,27.4,27.1,27.5,27.1,27.6,27.5,27.2
+Juli,27.7,27.3,26.8,27.3,27.8,27.3,27.0,27.1
+Agustus,27.6,27.6,26.7,27.3,27.7,27.6,26.8,27.2
+September,27.4,27.3,27.8,27.8,27.6,27.3,26.9,27.0
+Oktober,27.6,27.5,27.5,27.9,28.1,27.3,27.2,27.0
+November,27.7,27.4,26.8,27.6,28.0,27.6,26.8,27.2
+Desember,27.6,27.0,26.9,27.0,27.5,27.0,27.0,27.1
+'''
+
+# Membaca data CSV ke dalam DataFrame
+df = pd.read_csv(StringIO(csv_data))
+
+# Plotting grafik garis untuk setiap bulan sepanjang tahun
+plt.figure(figsize=(10, 6))
+for col in df.columns[1:]:
+    plt.plot(df['Bulan'], df[col], label=col)
+
+plt.title('Suhu Rata-rata Bulanan')
+plt.xlabel('Bulan')
+plt.ylabel('Suhu')
+plt.xticks(rotation=45)
+plt.legend(loc='upper right')
+plt.grid(True)
+plt.tight_layout()
+plt.show()
+
+
+
+
+
+# Analisis EDA Univariat dan Multivariat
+import pandas as pd
+import matplotlib.pyplot as plt
+from io import StringIO
+
+# Data CSV
+csv_data = '''Bulan,2015,2016,2017,2018,2019,2020,2021,2022
+Januari,26.5,27.8,27.0,26.8,27.1,27.6,26.5,26.6
+Februari,26.4,27.5,27.2,26.5,27.5,27.9,27.0,26.8
+Maret,27.3,27.9,26.9,27.0,26.8,27.8,27.0,26.9
+April,27.4,28.0,27.2,27.5,27.8,27.9,27.2,27.1
+Mei,27.7,28.2,27.7,27.8,28.1,28.0,27.6,27.5
+Juni,27.0,27.4,27.1,27.5,27.1,27.6,27.5,27.2
+Juli,27.7,27.3,26.8,27.3,27.8,27.3,27.0,27.1
+Agustus,27.6,27.6,26.7,27.3,27.7,27.6,26.8,27.2
+September,27.4,27.3,27.8,27.8,27.6,27.3,26.9,27.0
+Oktober,27.6,27.5,27.5,27.9,28.1,27.3,27.2,27.0
+November,27.7,27.4,26.8,27.6,28.0,27.6,26.8,27.2
+Desember,27.6,27.0,26.9,27.0,27.5,27.0,27.0,27.1
+'''
+
+# Membaca data CSV ke dalam DataFrame
+df = pd.read_csv(StringIO(csv_data))
+
+# EDA Analisis Univariat
+print("EDA Analisis Univariat:")
+print(df.describe())
+
+# EDA Analisis Multivariat
+print("\nEDA Analisis Multivariat:")
+correlation_matrix = df.iloc[:, 1:].corr()
+print(correlation_matrix)
+
+# Visualisasi Korelasi antar Bulan
+plt.figure(figsize=(10, 8))
+plt.imshow(correlation_matrix, cmap='coolwarm', interpolation='nearest')
+plt.colorbar()
+plt.title('Korelasi antar Bulan')
+plt.xticks(range(len(correlation_matrix)), correlation_matrix.columns, rotation=45)
+plt.yticks(range(len(correlation_matrix)), correlation_matrix.columns)
+plt.show()
+
+
+
+
+
+#Grafik Analisis Univariat dan Multivariat
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+from io import StringIO
 
-# Langkah 1: Memuat data
-data = pd.read_csv('Suhu.csv')
+# Data CSV
+csv_data = '''Bulan,2015,2016,2017,2018,2019,2020,2021,2022
+Januari,26.5,27.8,27.0,26.8,27.1,27.6,26.5,26.6
+Februari,26.4,27.5,27.2,26.5,27.5,27.9,27.0,26.8
+Maret,27.3,27.9,26.9,27.0,26.8,27.8,27.0,26.9
+April,27.4,28.0,27.2,27.5,27.8,27.9,27.2,27.1
+Mei,27.7,28.2,27.7,27.8,28.1,28.0,27.6,27.5
+Juni,27.0,27.4,27.1,27.5,27.1,27.6,27.5,27.2
+Juli,27.7,27.3,26.8,27.3,27.8,27.3,27.0,27.1
+Agustus,27.6,27.6,26.7,27.3,27.7,27.6,26.8,27.2
+September,27.4,27.3,27.8,27.8,27.6,27.3,26.9,27.0
+Oktober,27.6,27.5,27.5,27.9,28.1,27.3,27.2,27.0
+November,27.7,27.4,26.8,27.6,28.0,27.6,26.8,27.2
+Desember,27.6,27.0,26.9,27.0,27.5,27.0,27.0,27.1
+'''
 
-# Langkah 2: Visualisasi distribusi data
-plt.figure(figsize=(8, 6))
-sns.histplot(data['Temperature'], kde=True, color='skyblue')
-plt.title('Distribusi Suhu Rata-rata Bulanan')
-plt.xlabel('Suhu (Celsius)')
-plt.ylabel('Frekuensi')
+# Membaca data CSV ke dalam DataFrame
+df = pd.read_csv(StringIO(csv_data))
+
+# EDA Analisis Univariat
+print("EDA Analisis Univariat:")
+for col in df.columns[1:]:
+    plt.figure(figsize=(6, 4))
+    plt.hist(df[col], bins=10, color='skyblue')
+    plt.title(f'Distribusi suhu {col}')
+    plt.xlabel('Suhu')
+    plt.ylabel('Frekuensi')
+    plt.grid(True)
+    plt.show()
+
+# EDA Analisis Multivariat
+print("\nEDA Analisis Multivariat:")
+correlation_matrix = df.iloc[:, 1:].corr()
+plt.figure(figsize=(10, 8))
+sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm', fmt=".2f", linewidths=.5)
+plt.title('Korelasi antar Bulan')
 plt.show()
 
-# Langkah 3: Plot tren waktu
-plt.figure(figsize=(10, 6))
-sns.lineplot(data=data, x='Month', y='Temperature')
-plt.title('Tren Suhu Rata-rata Bulanan (2015-2022)')
-plt.xlabel('Tanggal')
-plt.ylabel('Suhu (Celsius)')
-plt.xticks(rotation=45)
-plt.show()
 
-# Langkah 4: Plot musimanitas
-plt.figure(figsize=(10, 6))
-sns.boxplot(data=data, x='Month', y='Temperature')
-plt.title('Polanya Musiman Suhu Rata-rata Bulanan')
-plt.xlabel('Bulan')
-plt.ylabel('Suhu (Celsius)')
-plt.xticks(rotation=45)
-plt.show()
 
-# Langkah 5: Korelasi dengan variabel lain (opsional)
-# Jika ada variabel lain seperti 'Curah Hujan', Anda bisa gunakan pairplot atau heatmap korelasi
 
-# Langkah 6: Visualisasi spasial (opsional)
-# Jika data terhubung dengan koordinat geografis, Anda bisa gunakan library geopandas atau folium untuk membuat peta.
 
-# Langkah 7: Interpretasi hasil
-# Setelah membuat visualisasi, analisis hasilnya untuk mendapatkan pemahaman yang lebih baik tentang tren dan pola yang ada dalam data.
-# Identifikasi apakah ada tren jangka panjang, musiman, atau pola korelasi dengan variabel lain yang dapat memengaruhi suhu rata-rata.
+#
