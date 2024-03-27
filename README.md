@@ -6,3 +6,4 @@ Data yang digunakan adalah dataset suhu rata-rata bulanan dari Kabupaten Barito 
 ## Data Preparation
 ### Pengumpulan Data
 Data saya ambil dari BPS data berisikan rata rata suhu pada Kabupaten Barito Utara sejak tahun 2015 hingga tahun 2022, data juga 
+[Link ke Data CSV](Suhu.csv)
