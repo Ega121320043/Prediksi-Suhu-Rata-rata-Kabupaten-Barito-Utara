@@ -51,8 +51,22 @@ Analisis multivariat menggunakan matriks korelasi memberikan perspektif yang leb
 Analisis multivariat pada data suhu rata-rata bulanan Kabupaten Barito Utara dilakukan dengan menyusun matriks korelasi. Matriks korelasi, sebagai alat analisis statistik, digunakan untuk mengevaluasi hubungan antara variabel numerik dalam dataset. Dalam konteks ini, matriks korelasi bertujuan untuk menentukan sejauh mana hubungan antara suhu rata-rata bulanan dari tahun 2015 hingga 2022. Koefisien korelasi yang dihasilkan, berkisar dari -1 hingga 1, menggambarkan tingkat hubungan linier antara variabel. Nilai 1 menunjukkan korelasi positif sempurna, -1 menunjukkan korelasi negatif sempurna, sementara nilai 0 menunjukkan tidak adanya hubungan linier. Dengan demikian, koefisien korelasi yang tinggi antara bulan-bulan menandakan keterkaitan yang kuat dalam hal suhu rata-rata. Analisis ini memberikan pemahaman yang dalam tentang pola atau tren suhu dari waktu ke waktu, yang pada gilirannya dapat memberikan wawasan berharga untuk perencanaan dan pengelolaan lingkungan serta kegiatan yang terkait dengan iklim di wilayah tersebut.
 
 ## Modeling
-Dalam menjalankan analisis regresi terhadap data suhu rata-rata bulanan Kabupaten Barito Utara dari tahun 2015 hingga 2022, kami menggunakan model regresi linier. Model ini dimaksudkan untuk memahami dan memprediksi hubungan linier antara bulan-bulan dan suhu rata-rata yang diamati. Model regresi linier mengasumsikan bahwa terdapat hubungan linier yang stabil antara variabel independen (bulan) dan variabel dependen (suhu rata-rata), serta bahwa tidak ada asumsi terhadap distribusi data atau interaksi antar variabel. Secara matematis, model regresi linier diwakili oleh persamaan:
+Dalam rumus regresi yang diberikan:
 
-\[ Y_i = \beta_0 + \beta_1X_i + \varepsilon_i \]
+Yi = a + bXi + ei
 
-di mana \( Y_i \) adalah suhu rata-rata pada bulan ke-\(i\), \( X_i \) adalah bulan ke-\(i\), \( \beta_0 \) adalah intercept (konstanta), \( \beta_1 \) adalah koefisien regresi (kemiringan), dan \( \varepsilon_i \) adalah kesalahan acak. Tujuan utama dari analisis regresi ini adalah untuk mengestimasi parameter \( \beta_0 \) dan \( \beta_1 \) yang optimal sehingga model dapat memberikan prediksi yang akurat terhadap suhu rata-rata bulanan berdasarkan bulan-bulan yang diamati. Penggunaan model regresi linier dalam konteks ini memungkinkan kita untuk mengidentifikasi dan memahami tren jangka panjang dalam suhu rata-rata bulanan, yang dapat memberikan wawasan yang berharga dalam perencanaan dan pengambilan keputusan terkait dengan iklim dan lingkungan di Kabupaten Barito Utara.
+- Yi adalah suhu rata-rata pada bulan ke-i,
+- Xi adalah bulan ke-i,
+- a adalah intercept (konstanta),
+- b adalah koefisien regresi (kemiringan), dan
+- ei adalah kesalahan acak.
+
+Dalam konteks ini:
+
+- a mewakili titik perpotongan garis regresi dengan sumbu Y (intersep),
+- b menunjukkan kemiringan garis regresi (slope), dan
+- ei menggambarkan variabilitas yang tidak dapat dijelaskan oleh model.
+
+Tujuan utama dari analisis regresi ini adalah untuk mengestimasi parameter a dan b yang optimal sehingga model dapat memberikan prediksi yang akurat terhadap suhu rata-rata bulanan berdasarkan bulan-bulan yang diamati. Dengan menggunakan model regresi linier, Anda dapat mengidentifikasi dan memahami tren jangka panjang dalam suhu rata-rata bulanan, yang dapat memberikan wawasan yang berharga dalam perencanaan dan pengambilan keputusan terkait dengan iklim dan lingkungan di Kabupaten Barito Utara.
+
+## Evaluation
