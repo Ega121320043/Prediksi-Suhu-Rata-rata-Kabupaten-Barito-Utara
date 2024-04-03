@@ -30,14 +30,8 @@ Kami melakukan validasi konsistensi data untuk memastikan bahwa data kami sesuai
 
 ## Visualisasi Data
 ### Analisis Univariat
-![image](https://github.com/Ega121320043/Prediksi-Suhu-Rata-rata-Kabupaten-Barito-Utara/assets/165037047/44b22c83-a59d-485c-b1e5-d4082220542b)
-![image](https://github.com/Ega121320043/Prediksi-Suhu-Rata-rata-Kabupaten-Barito-Utara/assets/165037047/a7567afe-5ffa-4bf4-9b5b-ca22862aadde)
-![image](https://github.com/Ega121320043/Prediksi-Suhu-Rata-rata-Kabupaten-Barito-Utara/assets/165037047/dce7b96a-3aea-42d0-9d05-c97be4fdfbc6)
-![image](https://github.com/Ega121320043/Prediksi-Suhu-Rata-rata-Kabupaten-Barito-Utara/assets/165037047/6baa14b4-9c2a-478a-b76b-4a7dcc38b994)
-![image](https://github.com/Ega121320043/Prediksi-Suhu-Rata-rata-Kabupaten-Barito-Utara/assets/165037047/1a63b060-dcbf-4057-bccb-835c966479e3)
-![image](https://github.com/Ega121320043/Prediksi-Suhu-Rata-rata-Kabupaten-Barito-Utara/assets/165037047/90f812a5-1c87-4aad-afd5-60869504da50)
-![image](https://github.com/Ega121320043/Prediksi-Suhu-Rata-rata-Kabupaten-Barito-Utara/assets/165037047/b0e79392-58fc-4f9c-9ec3-5da2ba271702)
-![image](https://github.com/Ega121320043/Prediksi-Suhu-Rata-rata-Kabupaten-Barito-Utara/assets/165037047/c482478f-85a5-4b47-b5f8-eee64a7f58c7)
+![image](https://github.com/Ega121320043/Prediksi-Suhu-Rata-rata-Kabupaten-Barito-Utara/assets/165037047/34ce6011-441d-4df5-94d3-51b15cf16e66)
+
 
 Analisis univariat dari dataset suhu rata-rata bulanan Kabupaten Barito Utara dari tahun 2015 hingga 2022 memberikan pemahaman yang mendalam tentang distribusi variabel tunggal. Setiap histogram memvisualisasikan distribusi suhu untuk setiap bulan secara terpisah. Dari hasil analisis tersebut, terlihat bahwa distribusi suhu cenderung mengikuti pola normal, dengan puncak tertinggi terjadi sekitar nilai rata-rata, terutama pada bulan Mei dan Juni. Namun, terdapat variasi yang signifikan antara bulan-bulan, seperti terlihat pada distribusi yang sedikit condong ke kiri pada bulan Agustus, menunjukkan kemungkinan penurunan suhu rata-rata pada bulan tersebut.
 
