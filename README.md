@@ -75,10 +75,12 @@ Tujuan utama dari analisis regresi ini adalah untuk mengestimasi parameter a dan
 Membuat prediksi terhadap data uji dan mengevaluasi kinerja model. Evaluasi dilakukan dengan menghitung sejumlah metrik evaluasi yang relevan, termasuk Mean Squared Error (MSE), Mean Absolute Error (MAE), dan Coefficient of Determination (R^2). Metrik-metrik tersebut digunakan untuk menilai seberapa baik model mampu memprediksi suhu rata-rata bulanan. Hasil evaluasi kemudian disajikan dalam bentuk tabel perbandingan model, yang memungkinkan analisis komparatif terhadap performa model Random Forest Regression dengan model-model lainnya.
 ### Tabel y_true dan y_pred
 ![image](https://github.com/Ega121320043/Prediksi-Suhu-Rata-rata-Kabupaten-Barito-Utara/assets/165037047/a85a0b5a-2157-4df8-abf6-5b88785b8fda)
+
 Selain itu, nilai sebenarnya (y_true) dan nilai prediksi (y_pred) dari data uji juga disimpan dalam tabel terpisah untuk memudahkan analisis lebih lanjut. Grafik perbandingan model disiapkan untuk memvisualisasikan nilai MSE dan MAE dari model Random Forest Regression secara komparatif.
 
 ### Grafik Perbandingan Model 
 ![image](https://github.com/Ega121320043/Prediksi-Suhu-Rata-rata-Kabupaten-Barito-Utara/assets/165037047/9d461eb4-f935-4c27-8ccd-84dbae074054)
+
 Terakhir, berdasarkan hasil evaluasi yang teliti, disimpulkan bahwa metode Random Forest Regression menunjukkan kinerja yang paling baik dalam memprediksi suhu rata-rata bulanan di Kabupaten Barito Utara. Kesimpulan ini didasarkan pada analisis mendalam terhadap metrik evaluasi yang relevan, memberikan wawasan yang berharga bagi perencanaan dan pengambilan keputusan terkait iklim dan lingkungan di wilayah tersebut.
 
 ## Refrensi
