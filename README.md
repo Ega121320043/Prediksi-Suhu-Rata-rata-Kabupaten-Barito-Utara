@@ -98,11 +98,19 @@ Terakhir, berdasarkan hasil evaluasi yang teliti, disimpulkan bahwa metode Rando
 
 ## Refrensi
 [1] Badan Pusat Statistik. (n.d.). Suhu Udara [Data]. Diakses dari https://barutkab.bps.go.id/indicator/151/89/1/suhu-udara.html
+
 [2] Sarwono, A. E., & Handayani, A. (2021). Metode kuantitatif. Unisri Press.
+
 [3] Fernandes, A. A. R. (2017). Metode statistika multivariat pemodelan persamaan struktural (sem) pendekatan warppls. Universitas Brawijaya Press.
+
 [4] Novianty, D., dias Palasara, N., & Qomaruddin, M. (2021). Algoritma Regresi Linear pada Prediksi Permohonan Paten yang Terdaftar di Indonesia. JUSTIN (Jurnal Sistem Dan Teknologi Informasi), 9(2), 81-85.
+
 [5] Ayuni, G. N., & Fitrianah, D. (2019). Penerapan metode Regresi Linear untuk prediksi penjualan properti pada PT XYZ. Jurnal telematika, 14(2), 79-86.
+
 [6] Dama, H. R. A., Supianto, A. A., & Setiawan, N. Y. (2021). Analisis Penggunaan Model Regresi untuk Prediksi Penjualan Spare Part pada AHASS Nur Andhita Grogol. Jurnal Pengembangan Teknologi Informasi dan Ilmu Komputer, 5(12), 5591-5603.
+
 [7] Lestari, E. S., Astuti, I., Informasi, T., Gunadarma, U., & Raya, J. M. (2022). Penerapan Random Forest Regression Untuk Memprediksi Harga Jual Rumah Dan Cosine Similarity Untuk Rekomendasi Rumah Pada Provinsi Jawa Barat. Jurnal Ilmiah FIFO, 14(2), 131.
+
 [8] Huda, M. (2023). Penerapan metode Random Forest pada prediksi penilaian nilai aset KJPP SIG MALANG berbasis web (Doctoral dissertation, Universitas Islam Negeri Maulana Malik Ibrahim).
+
 [9] Lumbanraja, F. R., Mudyaningsih, W., Hermanto, B., & Syarif, A. (2019, December). Implementasi Metode Random Forest untuk Prediksi Posisi Metilasi pada Sekuens Protein. In Prosiding Seminar Nasional Sains, Matematika, Informatika dan Aplikasinya (Vol. 5, No. 1).
