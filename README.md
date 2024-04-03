@@ -51,6 +51,7 @@ Analisis multivariat menggunakan matriks korelasi memberikan perspektif yang leb
 Analisis multivariat pada data suhu rata-rata bulanan Kabupaten Barito Utara dilakukan dengan menyusun matriks korelasi. Matriks korelasi, sebagai alat analisis statistik, digunakan untuk mengevaluasi hubungan antara variabel numerik dalam dataset. Dalam konteks ini, matriks korelasi bertujuan untuk menentukan sejauh mana hubungan antara suhu rata-rata bulanan dari tahun 2015 hingga 2022. Koefisien korelasi yang dihasilkan, berkisar dari -1 hingga 1, menggambarkan tingkat hubungan linier antara variabel. Nilai 1 menunjukkan korelasi positif sempurna, -1 menunjukkan korelasi negatif sempurna, sementara nilai 0 menunjukkan tidak adanya hubungan linier. Dengan demikian, koefisien korelasi yang tinggi antara bulan-bulan menandakan keterkaitan yang kuat dalam hal suhu rata-rata. Analisis ini memberikan pemahaman yang dalam tentang pola atau tren suhu dari waktu ke waktu, yang pada gilirannya dapat memberikan wawasan berharga untuk perencanaan dan pengelolaan lingkungan serta kegiatan yang terkait dengan iklim di wilayah tersebut.
 
 ## Modeling
+### Model Regresi
 Dalam rumus regresi yang diberikan:
 
 Yi = a + bXi + ei
@@ -69,6 +70,18 @@ Dalam konteks ini:
 
 Tujuan utama dari analisis regresi ini adalah untuk mengestimasi parameter a dan b yang optimal sehingga model dapat memberikan prediksi yang akurat terhadap suhu rata-rata bulanan berdasarkan bulan-bulan yang diamati. Dengan menggunakan model regresi linier, Anda dapat mengidentifikasi dan memahami tren jangka panjang dalam suhu rata-rata bulanan, yang dapat memberikan wawasan yang berharga dalam perencanaan dan pengambilan keputusan terkait dengan iklim dan lingkungan di Kabupaten Barito Utara.
 
+### Model Random Forest Regression
+Model Random Forest Regression merupakan sebuah metode prediksi yang menggunakan sejumlah pohon keputusan (decision trees) untuk melakukan regresi. Setiap pohon dalam model ini dibangun secara independen dan menghasilkan prediksi yang bersifat kontinu. Secara matematis, model Random Forest Regression dapat direpresentasikan sebagai berikut:
+
+![image](https://github.com/Ega121320043/Prediksi-Suhu-Rata-rata-Kabupaten-Barito-Utara/assets/165037047/ae45cc3e-bc34-421f-98f5-144e49ccca80)
+
+di mana Y(bar) adalah prediksi suhu rata-rata bulanan, N adalah jumlah pohon dalam model, dan Yi adalah prediksi suhu rata-rata bulanan yang dihasilkan oleh pohon ke-i.
+
+Metode ini menggabungkan prediksi dari setiap pohon keputusan untuk menghasilkan prediksi akhir. Proses pembangunan model ini melibatkan pemilihan secara acak dari fitur-fitur yang akan digunakan dalam pembangunan setiap pohon, serta pemilihan secara acak dari sampel data yang akan digunakan dalam pelatihan setiap pohon.
+
+Model Random Forest Regression memiliki keunggulan dalam menangani masalah overfitting, karena masing-masing pohon dalam model ini dibangun secara independen dan kemudian dikombinasikan untuk menghasilkan prediksi yang lebih stabil dan akurat.
+
+Dengan menggunakan metode Random Forest Regression, Anda dapat memprediksi suhu rata-rata bulanan di Kabupaten Barito Utara dengan lebih akurat dan dapat diandalkan, karena model ini mampu menangani pola-pola yang kompleks dan tidak linear dalam data suhu rata-rata bulanan.
 ## Evaluation
 ### Tabel Perbandingan Model Akhir:
 ![image](https://github.com/Ega121320043/Prediksi-Suhu-Rata-rata-Kabupaten-Barito-Utara/assets/165037047/2d7f2f89-88cb-4c7c-9d69-b8944df5821e)
@@ -84,3 +97,12 @@ Selain itu, nilai sebenarnya (y_true) dan nilai prediksi (y_pred) dari data uji 
 Terakhir, berdasarkan hasil evaluasi yang teliti, disimpulkan bahwa metode Random Forest Regression menunjukkan kinerja yang paling baik dalam memprediksi suhu rata-rata bulanan di Kabupaten Barito Utara. Kesimpulan ini didasarkan pada analisis mendalam terhadap metrik evaluasi yang relevan, memberikan wawasan yang berharga bagi perencanaan dan pengambilan keputusan terkait iklim dan lingkungan di wilayah tersebut.
 
 ## Refrensi
+[1] Badan Pusat Statistik. (n.d.). Suhu Udara [Data]. Diakses dari https://barutkab.bps.go.id/indicator/151/89/1/suhu-udara.html
+[2] Sarwono, A. E., & Handayani, A. (2021). Metode kuantitatif. Unisri Press.
+[3] Fernandes, A. A. R. (2017). Metode statistika multivariat pemodelan persamaan struktural (sem) pendekatan warppls. Universitas Brawijaya Press.
+[4] Novianty, D., dias Palasara, N., & Qomaruddin, M. (2021). Algoritma Regresi Linear pada Prediksi Permohonan Paten yang Terdaftar di Indonesia. JUSTIN (Jurnal Sistem Dan Teknologi Informasi), 9(2), 81-85.
+[5] Ayuni, G. N., & Fitrianah, D. (2019). Penerapan metode Regresi Linear untuk prediksi penjualan properti pada PT XYZ. Jurnal telematika, 14(2), 79-86.
+[6] Dama, H. R. A., Supianto, A. A., & Setiawan, N. Y. (2021). Analisis Penggunaan Model Regresi untuk Prediksi Penjualan Spare Part pada AHASS Nur Andhita Grogol. Jurnal Pengembangan Teknologi Informasi dan Ilmu Komputer, 5(12), 5591-5603.
+[7] Lestari, E. S., Astuti, I., Informasi, T., Gunadarma, U., & Raya, J. M. (2022). Penerapan Random Forest Regression Untuk Memprediksi Harga Jual Rumah Dan Cosine Similarity Untuk Rekomendasi Rumah Pada Provinsi Jawa Barat. Jurnal Ilmiah FIFO, 14(2), 131.
+[8] Huda, M. (2023). Penerapan metode Random Forest pada prediksi penilaian nilai aset KJPP SIG MALANG berbasis web (Doctoral dissertation, Universitas Islam Negeri Maulana Malik Ibrahim).
+[9] Lumbanraja, F. R., Mudyaningsih, W., Hermanto, B., & Syarif, A. (2019, December). Implementasi Metode Random Forest untuk Prediksi Posisi Metilasi pada Sekuens Protein. In Prosiding Seminar Nasional Sains, Matematika, Informatika dan Aplikasinya (Vol. 5, No. 1).
